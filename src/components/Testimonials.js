@@ -49,23 +49,13 @@ const data = [
 const Testimonials = () => {
   const props = {
     loop: true,
-    spaceBetween: 70,
-    slidesPerView: 2,
+    slidesPerView: "auto",
     autoplay: {
       delay: 1500,
     },
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 1,
-        // spaceBetween: 140,
-      },
-      720: {
-        slidesPerView: 1,
-      },
     },
   };
   return (
