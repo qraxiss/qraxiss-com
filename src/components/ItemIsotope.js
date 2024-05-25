@@ -28,6 +28,35 @@ const ItemIsotope = () => {
   const works = [
     {
       image: "images/works/app-shopcek.png",
+      description: "app.shopcek.com",
+    },
+    {
+      image: "images/works/shopcek.png",
+      description: "shopcek.com",
+    },
+    {
+      image: "images/works/arabulucuyuz.png",
+      description: "arabulucuyuz.com",
+    },
+    {
+      image: "images/works/city-street-visuals.png",
+      description: "Konya Street Visualization",
+    },
+    {
+      image: "images/works/fundamentai.png",
+      description: "FundamentAI",
+    },
+    {
+      image: "images/works/linker.png",
+      description: "Linker Company",
+    },
+    {
+      image: "images/works/ozteknik.png",
+      description: "Özteknik Hidrolik",
+    },
+    {
+      image: "images/works/vod.png",
+      description: "Video Streaming Place For Students",
     },
   ];
 
@@ -122,76 +151,34 @@ const ItemIsotope = () => {
       </div>
       {/* portfolio items */}
       <div className="box-items portfolio-items">
-        <div className="box-item f-web3">
-          {" "}
-          {/* add class "animate-to-page" if need animated transition to page and delete target="_blank" rel="noreferrer" */}
-          <div className="image">
-            <a href="#gallery-1" className="has-popup-gallery hover-animated">
-              <img src="images/work1.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-images" />
-                    <span className="desc">
-                      <span className="category">Gallery</span>
-                      <span className="name">Shot in Iceland</span>
+        {works.map(({ description, image }, index) => (
+          <div className="box-item f-web3">
+            {" "}
+            {/* add class "animate-to-page" if need animated transition to page and delete target="_blank" rel="noreferrer" */}
+            <div className="image">
+              <a href="#gallery-1" className="has-popup-gallery hover-animated">
+                <img src={image} className="wp-post-image" alt="" />
+                <span className="info circle">
+                  <span className="centrize full-width">
+                    <span className="vertical-center">
+                      <span className="icon fas fa-images" />
+                      <span className="desc">
+                        <span className="category">Gallery</span>
+                        <span className="name">{description}</span>
+                      </span>
                     </span>
                   </span>
                 </span>
-              </span>
-            </a>
-            <div id="gallery-1" className="mfp-hide">
-              <a href="images/work1.jpg" />
-              <a href="images/work2.jpg" />
-              <a href="images/work3.jpg" />
-              <a href="images/work4.jpg" />
+              </a>
+              <div id="gallery-1" className="mfp-hide">
+                <a href="images/work1.jpg" />
+                <a href="images/work2.jpg" />
+                <a href="images/work3.jpg" />
+                <a href="images/work4.jpg" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="box-item f-data-science">
-          <div className="image">
-            <a
-              href="https://google.com/"
-              className="has-popup-link hover-animated"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="images/work3.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-link" />
-                    <span className="desc">
-                      <span className="category">Links</span>
-                      <span className="name">Nike Red</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div className="box-item f-algo-trade">
-          <div className="image">
-            <a
-              href="https://www.youtube.com/embed/S4L8T2kFFck"
-              className="has-popup-video hover-animated"
-            >
-              <img src="images/work2.jpg" className="wp-post-image" alt="" />
-              <span className="info circle">
-                <span className="centrize full-width">
-                  <span className="vertical-center">
-                    <span className="icon fas fa-video" />
-                    <span className="desc">
-                      <span className="category">Video</span>
-                      <span className="name">Fertility of Some Plants</span>
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </Fragment>
   );

@@ -2795,6 +2795,7 @@
 .box-items .box-item .image {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .box-items .box-item .image a {
