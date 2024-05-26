@@ -10,9 +10,14 @@ const TypingAnimation = ({ typingData, extraClassName }) => {
         ? typingData
         : [
             "I'm <strong>qraxiss</strong>",
-            "I develop <strong>web apps</strong>",
+            "I love <strong>reactjs</strong>",
+            "I hate <strong>nextjs</strong>",
+            "I love <strong>nodejs</strong>",
+            "I love <strong>strapi</strong>",
+            "I love <strong>express</strong>",
+            "I love <strong>devops</strong>",
             "I love <strong>web3</strong>",
-          ], // Strings to display
+          ],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,

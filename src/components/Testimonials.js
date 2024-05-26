@@ -12,7 +12,7 @@ SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
 
 const data = [
   {
-    profile: "images/rev1.jpg",
+    // profile: "images/rev1.jpg",
     name: "Evren İ.",
     comment: `Kendisi yazılım konusunda çok bilgili. Bilmediği konuları
   bile araştırıp mutlaka bir şekilde çözüm üretiyor. Proje
@@ -22,7 +22,7 @@ const data = [
   },
 
   {
-    profile: "images/rev1.jpg",
+    // profile: "images/rev1.jpg",
     name: "Batuhan B.",
     comment: `Ben kripto para ticareti yapıyorum, bir bota ihtiyacım
     vardı, Mehmet ihtiyacım olan botu en iyi şekilde yaptı
@@ -32,14 +32,14 @@ const data = [
   },
 
   {
-    profile: "images/rev1.jpg",
+    // profile: "images/rev1.jpg",
     name: "Emrah V.",
     comment: `Gayet başarılı ve insanlarla iyi diyalog kurabilen yardımcı bir kişiliği var tavsiye ederim. Memnun kaldım.`,
     type: "Freelance Customer",
   },
 
   {
-    profile: "images/rev1.jpg",
+    // profile: "images/rev1.jpg",
     name: "Ahmet Ö.",
     comment: `Genç Olmasına Rağmen Mükemmel Derecede Bir Düşünme Yeteneği Var Proje İçin Teşekkür ederim 😊`,
     type: "Freelance Customer",

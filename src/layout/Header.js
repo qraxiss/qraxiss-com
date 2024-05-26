@@ -9,7 +9,9 @@ const Menu = () => (
           <strong>qraxiss</strong>
         </span>
         <span className="mask-lnk mask-lnk-hover">
-          Download <strong>CV</strong>
+          <a href="assets/qraxiss-resume.pdf" target="_blank">
+            Download <strong>CV</strong>
+          </a>
         </span>
       </a>
     </div>

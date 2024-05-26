@@ -171,10 +171,10 @@ const ItemIsotope = () => {
                 </span>
               </a>
               <div id="gallery-1" className="mfp-hide">
-                <a href="images/work1.jpg" />
+                {/* <a href="images/work1.jpg" />
                 <a href="images/work2.jpg" />
                 <a href="images/work3.jpg" />
-                <a href="images/work4.jpg" />
+                <a href="images/work4.jpg" /> */}
               </div>
             </div>
           </div>

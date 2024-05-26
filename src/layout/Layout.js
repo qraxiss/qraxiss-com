@@ -1,5 +1,3 @@
-"use client";
-
 import { Fragment, useEffect, useState } from "react";
 import ContentModal from "../components/popup/ContentModal";
 import ImageGallery from "../components/popup/ImageGallery";

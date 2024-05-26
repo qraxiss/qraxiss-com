@@ -2,14 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
 
 const ImgView = ({ close, imgs }) => {
-  const images =
-    imgs.length > 0
-      ? imgs
-      : [
-          "images/works/work6.jpg",
-          "images/works/work1.jpg",
-          "images/works/work5.jpg",
-        ];
+  const images = imgs;
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (

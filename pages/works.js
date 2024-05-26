@@ -12,7 +12,7 @@ const Works = () => {
   ];
   return (
     <Layout>
-      <DefaultPageBanner pageName={"works"} typingData={typingAnimation} />
+      <DefaultPageBanner pageName={"Works"} typingData={typingAnimation} />
       <div className="section works" id="next_section">
         <div className="content">
           <ItemIsotope />

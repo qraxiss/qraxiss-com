@@ -1270,6 +1270,7 @@
 .section.about .image img {
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
 .section.about .desc {
@@ -3668,9 +3669,17 @@ object {
 }
 
 .footer .copy {
+  font-size: large !important;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.footer .copy a {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  text-decoration: unset;
 }
 
 .footer p,

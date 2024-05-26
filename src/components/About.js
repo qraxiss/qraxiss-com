@@ -6,40 +6,50 @@ const About = () => {
       <div className="content content-box">
         {/* image */}
         <div className="image">
-          <img src="images/man_r.jpg" alt="" />
+          <img
+            src="https://media.licdn.com/dms/image/D4D03AQFmgSF5ZRunKA/profile-displayphoto-shrink_800_800/0/1707221387361?e=1722470400&v=beta&t=MxhEgWc7sUMfdQmJ4LMVC7xiY9tuGZyEuafUFcGrBOU"
+            alt=""
+          />
         </div>
         {/* desc */}
         <div className="desc">
           <p>
-            Hello! I’m Daniel Curry. Web designer from USA, California, San
-            Francisco. I have rich experience in web site design and building,
-            also I am good at wordpress. I love to talk with you about our
-            unique.
+            I am studying 3rd year Computer Engineering at Konya Technical
+            University. Since I have a very high curiosity about computer
+            science, I like to challenge myself as long as it involves computer
+            engineering. This improves me every day.
           </p>
           <div className="info-list">
             <ul>
               <li>
-                <strong>Age:</strong> 24
+                <strong>Age:</strong> 23
               </li>
               <li>
-                <strong>Residence:</strong> USA
+                <strong>Residence:</strong> Turkey
               </li>
               <li>
                 <strong>Freelance:</strong> Available
               </li>
               <li>
-                <strong>Address:</strong> San Francisco
+                <strong>Address:</strong> Istanbul
               </li>
               <li>
-                <strong>Phone:</strong> +1 256 254 84 56
+                <strong>Telegram:</strong>{" "}
+                <a href="https://t.me/qraxiss" target="_blank">
+                  @qraxiss
+                </a>
               </li>
               <li>
-                <strong>E-mail:</strong> alejandroa@gmail.com
+                <strong>E-mail:</strong> info@qraxiss.com
               </li>
             </ul>
           </div>
           <div className="bts">
-            <a href="#" className="btn hover-animated">
+            <a
+              href="assets/qraxiss-resume.pdf"
+              target="_blank"
+              className="btn hover-animated"
+            >
               <span className="circle" />
               <span className="lnk">Download CV</span>
             </a>

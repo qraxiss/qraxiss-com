@@ -1,73 +1,78 @@
+const kapsul = {
+  link: "https://www.linkedin.com/company/kapsul-teknoloji-platformu/",
+  name: "Kapsül Technology Platform",
+};
+
+const shopcek = {
+  link: "https://www.linkedin.com/company/shopcek",
+  name: "Shopcek",
+};
+
+const experiences = [
+  {
+    company: shopcek,
+    date: "Nov 2023 - Present, 7 mos",
+    title: "Full Stack Core Developer",
+    description:
+      "Led the development of full stack solutions, ensuring optimal performance and user experience.",
+  },
+  {
+    company: shopcek,
+    date: "Sep 2022 - Nov 2022, 3 mos",
+    title: "Backend Developer",
+    description:
+      "Developed and maintained server-side logic, ensuring high performance and responsiveness.",
+  },
+  {
+    company: kapsul,
+    date: "Jun 2023 - May 2023, 4 mos",
+    title: "Full Stack Core Developer",
+    description:
+      "Led the development of full stack solutions, ensuring optimal performance and user experience.",
+  },
+  {
+    company: kapsul,
+    date: "Jan 2023 - Jun 2023, 6 mos",
+    title: "Backend Developer",
+    description:
+      "Developed and maintained server-side logic, ensuring high performance and responsiveness.",
+  },
+  {
+    company: kapsul,
+    date: "May 2022 - Jan 2023, 9 mos",
+    title: "Data Scientist",
+    description:
+      "Analyzed and interpreted complex data to help inform business decisions and strategies.",
+  },
+];
+
 const ResumeSection = () => {
   return (
     <div className="section resume" id="section-history">
       <div className="content">
         <div className="cols">
-          <div className="col col-md">
-            {/* title */}
-            <div className="title">
-              <div className="title_inner">Experience</div>
-            </div>
-            {/* resume items */}
-            <div className="resume-items">
-              <div className="resume-item content-box active">
-                <div className="date">2013 - Present</div>
-                <div className="name">Art Director - Facebook Inc.</div>
-                <div className="text">
-                  Collaborate with creative and development teams on the
-                  execution of ideas.
-                </div>
-              </div>
-              <div className="resume-item content-box">
-                <div className="date">2011 - 2012</div>
-                <div className="name">Front-End Developer - Google Inc.</div>
-                <div className="text">
-                  Monitored technical aspects of the front-end delivery for
-                  projects.
-                </div>
-              </div>
-              <div className="resume-item content-box">
-                <div className="date">2009 - 2010</div>
-                <div className="name">Senior Developer - ABC Inc.</div>
-                <div className="text">
-                  Optimize your website and apps performance using latest
-                  technology.
-                </div>
-              </div>
-            </div>
+          {/* title */}
+          <div className="title">
+            <div className="title_inner">Experience</div>
           </div>
-          <div className="col col-md">
-            {/* title */}
-            <div className="title">
-              <div className="title_inner">Education</div>
-            </div>
-            {/* resume items */}
-            <div className="resume-items">
-              <div className="resume-item content-box">
-                <div className="date">2006 - 2008</div>
-                <div className="name">Art University - New York</div>
-                <div className="text">
-                  Bachelors Degree in Computer Science ABC Technical Institute,
-                  Jefferson, Missouri.
+          {/* resume items */}
+          <div className="resume-items">
+            {experiences.map(({ description, company, date, title }, index) => (
+              <div
+                className={`resume-item content-box ${
+                  index === 0 ? "active" : ""
+                }`}
+              >
+                <div className="date">{date}</div>
+                <div className="name">
+                  {title} <br />
+                  <a href={company.link} target="_blank">
+                    {company.name}
+                  </a>
                 </div>
+                <div className="text">{description}</div>
               </div>
-              <div className="resume-item content-box">
-                <div className="date">2005 - 2006</div>
-                <div className="name">Programming Course - Paris</div>
-                <div className="text">
-                  Coursework - Git, WordPress, Javascript, iOS, Android, CSS,
-                  and JavaScript.
-                </div>
-              </div>
-              <div className="resume-item content-box">
-                <div className="date">2004 - 2005</div>
-                <div className="name">Web Design Course - London</div>
-                <div className="text">
-                  Converted Photoshop layouts to web pages using HTML, CSS, and
-                  JavaScript.
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
